@@ -4,6 +4,7 @@ body {
     background-color: #f2f2f2;
     color: #333;
     margin: 0;
+    line-height: 1.6;
 }
 
 h1, h2, h3 {
@@ -34,6 +35,25 @@ h1, h2, h3 {
     color: white;
     text-decoration: none;
     font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    color: #cb540f; /* Destaque ao passar o mouse */
+}
+
+/* Responsividade no menu */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 /* Seção Principal */
@@ -72,6 +92,7 @@ h1, h2, h3 {
     padding: 50px;
     background-color: #1b441b;
     color: white;
+    text-align: center;
 }
 
 .service-card {
@@ -79,12 +100,24 @@ h1, h2, h3 {
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    text-align: center;
     transition: transform 0.3s;
 }
 
 .service-card:hover {
     transform: scale(1.05);
+}
+
+.service-card h3 {
+    margin-top: 0;
+}
+
+/* Grid para serviços */
+@media (min-width: 768px) {
+    .services-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
 }
 
 /* Sobre nós */
@@ -101,6 +134,15 @@ h1, h2, h3 {
     text-align: center;
 }
 
+/* Responsividade da seção "Sobre nós" */
+@media (min-width: 768px) {
+    .about-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+}
+
 /* Equipe */
 .team-section {
     text-align: center;
@@ -108,7 +150,8 @@ h1, h2, h3 {
 }
 
 .team-section img {
-    width: 80%;
+    width: 100%;
+    max-width: 500px;
     border-radius: 10px;
 }
 
@@ -121,11 +164,24 @@ h1, h2, h3 {
 
 .contact-info {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-details {
     max-width: 300px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .contact-info {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contact-details {
+        margin-top: 0;
+    }
 }
 
 /* Botão do WhatsApp */
@@ -140,4 +196,10 @@ h1, h2, h3 {
     font-size: 24px;
     z-index: 100;
     text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
 }
