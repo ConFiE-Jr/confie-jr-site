@@ -3,84 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ConFiE Jr - Consultoria em Fisioterapia e Ergonomia">
     <title>ConFiE Jr - Consultoria em Fisioterapia e Ergonomia</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/logo" alt="Logo da ConFiE Jr">
+    <!-- Menu de Navegação -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/logo-confie.png" alt="Logo ConFiE Jr">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#equipe">Equipe</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <ul class="navbar-menu">
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#team">Equipe</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção Principal -->
+    <header class="main-header">
+        <h1 class="main-title">ConFiE Jr - Consultoria em Fisioterapia e Ergonomia</h1>
+        <p class="sub-title">Movimentando sua empresa do jeito certo desde 2019!</p>
     </header>
 
-    <section class="hero">
-        <div class="overlay">
-            <h1>Movimentando sua empresa do jeito certo</h1>
-            <p>Consultoria em Fisioterapia e Ergonomia desde 2019</p>
-            <a href="#contato" class="btn-cta">Entre em Contato</a>
+    <!-- Seção Sobre Nós (MVV) -->
+    <section id="about" class="mvv-section">
+        <div class="mvv-card">
+            <img src="assets/icon-visao.png" alt="Visão">
+            <h3>Visão</h3>
+            <p>Ser uma empresa de impacto, que proporciona vivência empresarial e experiência em fisioterapia para todos os membros.</p>
+        </div>
+        <div class="mvv-card">
+            <img src="assets/icon-missao.png" alt="Missão">
+            <h3>Missão</h3>
+            <p>Promover qualidade de vida para a população, por meio de serviços de excelência em fisioterapia.</p>
+        </div>
+        <div class="mvv-card">
+            <img src="assets/icon-valores.png" alt="Valores">
+            <h3>Valores</h3>
+            <p>Confiança, colaboração, movimento, ousadia de inovar e comprometimento.</p>
         </div>
     </section>
 
-    <section id="sobre" class="mvv-section">
-        <h2>Sobre Nós</h2>
-        <p><strong>Missão:</strong> Promover qualidade de vida para a população, por meio de serviços de excelência em fisioterapia, buscando capacitação dos membros e sua formação empreendedora como profissionais comprometidos com a ciência.</p>
-        <p><strong>Visão:</strong> Ser uma empresa de impacto, que proporciona vivência empresarial e experiência em fisioterapia para todos os membros.</p>
-        <p><strong>Valores:</strong> Confiança, Colaboração, Movimento, Ousadia de Inovar e Comprometimento.</p>
-    </section>
-
-    <section id="servicos" class="services-section">
+    <!-- Seção Nossos Serviços -->
+    <section id="services" class="services-section">
         <h2>Nossos Serviços</h2>
-        <div class="service-list">
-            <div class="service-item">
-                <h3>Fisioterapia Esportiva</h3>
-                <ul>
-                    <li>Liberação Miofascial</li>
-                    <li>Primeiros Socorros no Esporte</li>
-                    <li>Imobilização Articular</li>
-                    <li>Gestão de Eventos Esportivos</li>
-                    <li>Avaliação de Atletas</li>
-                </ul>
-            </div>
-            <div class="service-item">
-                <h3>Ergonomia</h3>
-                <ul>
-                    <li>AET (Análise Ergonômica do Trabalho)</li>
-                    <li>AEP (Análise Ergonômica Postural)</li>
-                    <li>Ginástica Laboral</li>
-                    <li>Consultoria em Ergonomia</li>
-                </ul>
-            </div>
+        <div class="service-card">
+            <img src="assets/liberacao.jpg" alt="Liberação Miofascial">
+            <h3>Liberação Miofascial</h3>
+            <p>Uma técnica manual que ajuda a aliviar a tensão muscular e prevenir dores fortes após as atividades.</p>
+        </div>
+        <div class="service-card">
+            <img src="assets/primeiros-socorros.jpg" alt="Primeiros Socorros no Esporte">
+            <h3>Primeiros Socorros no Esporte</h3>
+            <p>Avaliação rápida da condição de saúde do atleta, oferecendo tratamento eficaz para melhorar ou controlar lesões.</p>
+        </div>
+        <div class="service-card">
+            <img src="assets/imobilizacao.jpg" alt="Imobilização Articular">
+            <h3>Imobilização Articular</h3>
+            <p>Previne danos extras em áreas lesionadas, evitando piora do edema local e reduzindo a dor.</p>
+        </div>
+        <div class="service-card">
+            <img src="assets/eventos-esportivos.jpg" alt="Gestão de Eventos Esportivos">
+            <h3>Gestão de Eventos Esportivos</h3>
+            <p>Organizamos eventos esportivos como campeonatos e torneios, cuidando de todos os aspectos necessários.</p>
+        </div>
+        <div class="service-card">
+            <img src="assets/ginastica.jpg" alt="Ginástica Laboral">
+            <h3>Ginástica Laboral</h3>
+            <p>Exercícios no ambiente de trabalho para melhorar a saúde e qualidade de vida dos colaboradores.</p>
         </div>
     </section>
 
-    <section id="equipe" class="team-section">
-        <h2>Nossa Equipe</h2>
-        <img src="assets/IMG_3986.jpg" alt="Foto da equipe ConFiE Jr">
+    <!-- Seção Equipe -->
+    <section id="team">
+        <h2>Equipe</h2>
+        <img src="assets/equipe.jpg" alt="Foto da Equipe">
     </section>
 
-    <section id="contato" class="contact-section">
+    <!-- Seção Contato -->
+    <section id="contact">
         <h2>Entre em Contato</h2>
-        <p>Localização: <a href="https://maps.app.goo.gl/XL8u5t9XxCrS5vXMA" target="_blank">Universidade de Brasília</a></p>
-        <p>Email: <a href="mailto:confie.ej@gmail.com">confie.ej@gmail.com</a></p>
-        <p>Instagram: <a href="https://www.instagram.com/confie.ej/" target="_blank">@confie.ej</a></p>
+        <p>Nosso e-mail: confie.ej@gmail.com</p>
+        <p>Instagram: <a href="https://www.instagram.com/confie.ej">@confie.ej</a></p>
+        <iframe src="https://maps.google.com/maps?q=localização_da_sua_empresa&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
     </section>
 
-    <a href="https://api.whatsapp.com/send?phone=5561983832274" class="whatsapp-link" target="_blank">
-        <img src="assets/wpp" alt="WhatsApp">
-    </a>
+    <!-- Botão de WhatsApp -->
+    <a href="https://wa.me/5561983832274" class="whatsapp-btn" target="_blank">WhatsApp</a>
 
-    <footer>
-        <p>&copy; 2024 ConFiE Jr - Todos os direitos reservados.</p>
-    </footer>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
