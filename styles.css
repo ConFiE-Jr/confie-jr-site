@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #1b441b;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b441b;
+    padding: 20px;
+    color: white;
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.overlay h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btn-cta {
+    background-color: #cb540f;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.mvv-section, .services-section, .team-section, .contact-section {
+    padding: 50px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    color: #1b441b;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.team-section img {
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #1b441b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.whatsapp-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp-link img {
+    width: 60px;
+}
