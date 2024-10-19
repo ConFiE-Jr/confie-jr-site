@@ -3,118 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ConFiE Jr - Consultoria em Fisioterapia e Ergonomia">
     <title>ConFiE Jr - Consultoria em Fisioterapia e Ergonomia</title>
-    <!-- Fontes do Google Fonts corrigido -->
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-    <!-- Link para o arquivo CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Fonte Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Folha de estilos -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Menu de navegação -->
-    <header class="navbar">
-        <div class="navbar-logo">
-            <img src="logo-01.png" alt="Logo da Empresa">
-        </div>
+    <!-- Menu superior -->
+    <header>
         <nav>
-            <ul class="navbar-menu">
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#team">Equipe</a></li>
-                <li><a href="#contact">Contato</a></li>
+            <img src="logo.png" alt="Logo ConFiE Jr" class="logo">
+            <ul>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#cases">Cases de Sucesso</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção Principal -->
-    <section class="main-header">
-        <h1 class="main-title">ConFiE Jr - Consultoria em Fisioterapia e Ergonomia</h1>
-        <p class="sub-title">Movimentando sua empresa do jeito certo desde 2019!</p>
-    </section>
-
-    <!-- Nossos Serviços -->
-    <section id="services" class="services-section">
-        <h2>Nossos Serviços</h2>
-        <div class="service-card">
-            <h3>Liberação Miofascial</h3>
-            <p>É uma técnica manual que ajuda a aliviar a tensão muscular após grandes esforços e estresse acumulado durante uma atividade física. Além disso, a liberação ajuda a realinhar as fibras musculares e retirar nós de tensão nos músculos, prevenindo dores fortes após as atividades e melhorando a condição de saúde da pessoa.</p>
-        </div>
-        <div class="service-card">
-            <h3>Primeiros Socorros no Esporte</h3>
-            <p>Tem por objetivo avaliar de forma rápida a condição de saúde do atleta, verificando lesões ou danos sofridos durante a prática esportiva, e oferecendo um tratamento rápido e eficaz para melhorar ou controlar a condição de saúde.</p>
-        </div>
-        <div class="service-card">
-            <h3>Imobilização Articular</h3>
-            <p>Serve para prevenir possíveis danos extras em áreas que já apresentam lesão, devido a impactos, entorses e outros, fazendo com que previna a piora do edema local e reduza a dor.</p>
-        </div>
-        <div class="service-card">
-            <h3>Gestão de Eventos Esportivos</h3>
-            <p>Fazemos a gestão do seu evento esportivo, como campeonatos, torneios, gincanas e outras atividades. Organizamos desde o chaveamento dos jogadores/participantes e partidas, até a organização de materiais, como troféus e medalhas, além de outros aspectos importantes para o evento.</p>
-        </div>
-        <div class="service-card">
-            <h3>Avaliação de Atletas</h3>
-            <p>Realizamos avaliações personalizadas de desempenho e condição física de atletas, identificando pontos de melhoria para otimizar a performance e prevenir lesões.</p>
-        </div>
-        <div class="service-card">
-            <h3>AET (Análise Ergonômica do Trabalho)</h3>
-            <p>A Análise Ergonômica do Trabalho (AET) busca identificar e avaliar riscos ergonômicos em postos de trabalho, propondo soluções que melhorem a saúde e o bem-estar dos colaboradores, além de aumentar a produtividade.</p>
-        </div>
-        <div class="service-card">
-            <h3>AEP (Avaliação Ergonômica Preliminar)</h3>
-            <p>A Avaliação Ergonômica Preliminar (AEP) é uma análise rápida e eficaz dos principais fatores ergonômicos de um ambiente de trabalho, permitindo intervenções iniciais para melhorar as condições laborais.</p>
-        </div>
-        <div class="service-card">
-            <h3>Ginástica Laboral</h3>
-            <p>É o tipo de exercício realizado no trabalho com o objetivo de melhorar a saúde e a qualidade de vida dos colaboradores. A ginástica, que utiliza técnicas de respiração, alongamento, correção de postura e fortalecimento, evita doenças ocupacionais e o surgimento de dores e lesões.</p>
-        </div>
-        <div class="service-card">
-            <h3>Consultoria em Ergonomia</h3>
-            <p>Oferecemos consultoria especializada em ergonomia, ajudando empresas a identificar e resolver problemas relacionados ao ambiente de trabalho, prevenindo doenças ocupacionais e melhorando a qualidade de vida dos funcionários.</p>
+    <!-- Seção principal -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>ConFiE Jr - Consultoria em Fisioterapia e Ergonomia</h1>
+            <p>Movimentando sua empresa do jeito certo desde 2019!</p>
         </div>
     </section>
 
-    <!-- Sobre Nós (Missão, Visão, Valores) -->
-    <section id="about" class="about-section">
+    <!-- Sobre nós -->
+    <section id="sobre" class="section-padding">
         <h2>Sobre Nós</h2>
-        <div class="mvv-card">
-            <h3>Missão</h3>
-            <p>Promover qualidade de vida para a população, por meio de serviços de excelência em fisioterapia, buscando capacitação dos membros e sua formação empreendedora como profissionais comprometidos com a ciência.</p>
-        </div>
-        <div class="mvv-card">
-            <h3>Visão</h3>
-            <p>Ser uma empresa de impacto, que proporciona vivência empresarial e experiência em fisioterapia para todos os membros.</p>
-        </div>
-        <div class="mvv-card">
-            <h3>Valores</h3>
-            <p>Confiança, colaboração, movimento, ousadia de inovar, comprometimento.</p>
-        </div>
-    </section>
-
-    <!-- Equipe -->
-    <section id="team" class="team-section">
-        <h2>Nossa Equipe</h2>
-        <img src="equipe.jpg" alt="Equipe">
-    </section>
-
-    <!-- Contato -->
-    <section id="contact" class="contact-section">
-        <h2>Entre em Contato</h2>
-        <div class="contact-info">
-            <iframe src="https://maps.app.goo.gl/XL8u5t9XxCrS5vXMA" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <div class="contact-details">
-                <p>Email: <a href="mailto:confie.ej@gmail.com">confie.ej@gmail.com</a></p>
-                <p>Instagram: <a href="https://www.instagram.com/confie.ej/" target="_blank">@confie.ej</a></p>
-                <p>WhatsApp: <a href="https://wa.me/5561983832274" target="_blank">+55 61 98383-2274</a></p>
+        <div class="mvv">
+            <div class="card">
+                <h3>Missão</h3>
+                <p>Promover qualidade de vida para a população, por meio de serviços de excelência em fisioterapia, buscando capacitação dos membros e sua formação empreendedora como profissionais comprometidos com a ciência.</p>
+            </div>
+            <div class="card">
+                <h3>Visão</h3>
+                <p>Ser uma empresa de impacto, que proporciona vivência empresarial e experiência em fisioterapia para todos os membros.</p>
+            </div>
+            <div class="card">
+                <h3>Valores</h3>
+                <p>Confiança, colaboração, movimento, ousadia de inovar e comprometimento.</p>
             </div>
         </div>
     </section>
 
-    <!-- Botão do WhatsApp Fixo com ícone -->
-    <a href="https://wa.me/5561983832274" class="whatsapp-btn" target="_blank">
-        <img src="whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon">
-    </a>
+    <!-- Nossos serviços -->
+    <section id="servicos" class="section-padding">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-container">
+            <div class="servico-item">
+                <h3>Liberação Miofascial</h3>
+                <p>É uma técnica manual que ajuda a aliviar a tensão muscular após grandes esforços e estresse acumulado durante uma atividade física, prevenindo dores e melhorando a condição de saúde.</p>
+            </div>
+            <div class="servico-item">
+                <h3>Primeiros Socorros no Esporte</h3>
+                <p>Avaliação rápida de saúde do atleta, oferecendo tratamento imediato para lesões ocorridas durante a prática esportiva, garantindo eficiência e segurança.</p>
+            </div>
+            <div class="servico-item">
+                <h3>Imobilização Articular</h3>
+                <p>Imobilização de articulações lesionadas para evitar danos extras, prevenindo a piora de edemas e redução de dor.</p>
+            </div>
+            <div class="servico-item">
+                <h3>Gestão de Eventos Esportivos</h3>
+                <p>Organizamos seu evento esportivo, desde chaveamento de participantes até organização de materiais, oferecendo uma gestão completa.</p>
+            </div>
+            <div class="servico-item">
+                <h3>AET (Análise Ergonômica do Trabalho)</h3>
+                <p>Em desenvolvimento.</p>
+            </div>
+            <div class="servico-item">
+                <h3>AEP (Avaliação Ergonômica Preliminar)</h3>
+                <p>Em desenvolvimento.</p>
+            </div>
+            <div class="servico-item">
+                <h3>Ginástica Laboral</h3>
+                <p>Exercícios no trabalho com objetivo de melhorar a saúde e qualidade de vida dos colaboradores, prevenindo doenças ocupacionais e lesões.</p>
+            </div>
+            <div class="servico-item">
+                <h3>Consultoria em Ergonomia</h3>
+                <p>Em desenvolvimento.</p>
+            </div>
+        </div>
+    </section>
 
-    <!-- Script JavaScript no final -->
-    <script src="js/script.js"></script>
+    <!-- Seção de Contato -->
+    <section id="contato" class="section-padding">
+        <h2>Entre em Contato</h2>
+        <div class="contato-container">
+            <iframe src="https://maps.app.goo.gl/XL8u5t9XxCrS5vXMA" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="contact-details">
+                <p>Email: <a href="mailto:confie.ej@gmail.com">confie.ej@gmail.com</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/confie.ej">@confie.ej</a></p>
+                <a href="https://wa.me/5561983832274" class="whatsapp-link">Fale Conosco no WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 ConFiE Jr - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="scripts.js"></script>
 </body>
 </html>
