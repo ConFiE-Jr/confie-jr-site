@@ -13,10 +13,12 @@ body {
     align-items: center;
     background-color: #1b441b;
     padding: 10px 50px;
+    flex-wrap: wrap; /* Permite o menu se ajustar em telas menores */
 }
 
 .navbar-logo img {
     width: 100px;
+    max-width: 100%; /* Garantia de responsividade para o logo */
 }
 
 .navbar-menu {
@@ -29,6 +31,10 @@ body {
     color: white;
     text-decoration: none;
     font-size: 16px;
+}
+
+.navbar-menu li a:focus {
+    outline: 2px dashed white; /* Melhoria de acessibilidade */
 }
 
 /* Seção principal (Header) */
@@ -48,7 +54,7 @@ body {
 
 .sub-title {
     font-size: 24px;
-    color: #f2f2f2;
+    color: #e0e0e0; /* Cor ajustada para melhorar o contraste */
     animation: fadeIn 3s ease-in-out;
 }
 
@@ -70,11 +76,13 @@ body {
     justify-content: space-around;
     padding: 50px 0;
     background-color: #f2f2f2;
+    flex-wrap: wrap; /* Permite ajuste em telas menores */
 }
 
 .mvv-card {
     text-align: center;
-    width: 30%;
+    flex: 1 1 30%; /* Largura flexível */
+    max-width: 300px; /* Limite para não crescer demais */
 }
 
 .mvv-card img {
@@ -141,7 +149,8 @@ body {
 }
 
 #team img {
-    width: 80%;
+    width: 100%; /* Garantia de responsividade */
+    max-width: 200px; /* Define um tamanho máximo para as imagens */
     border-radius: 10px;
 }
 
@@ -173,4 +182,10 @@ body {
     font-size: 24px;
     z-index: 100;
     text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s; /* Transições adicionadas */
+}
+
+.whatsapp-btn:hover {
+    background-color: #128c7e; /* Cor mais escura no hover */
+    transform: scale(1.1); /* Leve efeito de zoom */
 }
