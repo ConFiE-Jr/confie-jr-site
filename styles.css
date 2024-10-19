@@ -1,150 +1,150 @@
-/* Fontes globais */
-body {
-    font-family: 'Quicksand', sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    color: #1b441b;
     line-height: 1.6;
 }
 
-h1, h2, h3 {
-    font-family: 'League Spartan', sans-serif;
-    color: #1b441b;
+/* Header */
+header {
+    background-color: #1b441b;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Menu de navegação */
-.navbar {
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1b441b;
-    padding: 10px 50px;
 }
 
-.navbar-logo img {
-    width: 80px;
+header .logo {
+    height: 60px;
 }
 
-.navbar-menu {
-    list-style: none;
+header ul {
     display: flex;
-    gap: 20px;
+    list-style: none;
 }
 
-.navbar-menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
+header ul li {
+    margin-left: 20px;
 }
 
-.navbar-menu li a:hover {
-    color: #cb540f;
-}
-
-/* Seção Principal */
-.main-header {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: #81a969;
-}
-
-.main-title {
-    font-size: 48px;
-    color: white;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.sub-title {
-    font-size: 24px;
+header ul li a {
     color: #f2f2f2;
-    animation: fadeIn 3s ease-in-out;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-@keyframes fadeIn {
-    0% {
+header ul li a:hover {
+    color: #81a969;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #81a969;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#hero h1 {
+    color: #f2f2f2;
+    font-size: 2.5rem;
+    animation: fadeInDown 1.5s;
+}
+
+#hero p {
+    color: #f2f2f2;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    animation: fadeInUp 1.5s;
+}
+
+@keyframes fadeInDown {
+    from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-50px);
     }
-    100% {
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-/* Nossos Serviços */
-.services-section {
-    padding: 50px;
-    background-color: #1b441b;
-    color: white;
-    text-align: center;
-}
-
-.service-card {
-    background-color: #81a969;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s;
-}
-
-.service-card:hover {
-    transform: scale(1.05);
-}
-
-@media (min-width: 768px) {
-    .services-section {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-/* Sobre nós */
-.about-section {
-    padding: 50px;
-    background-color: #f2f2f2;
+/* Seções Gerais */
+.section-padding {
+    padding: 60px 20px;
 }
 
-.mvv-card {
-    background-color: #81a969;
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #1b441b;
+    margin-bottom: 40px;
+}
+
+/* MVV Section */
+.mvv {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #cb540f;
     padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #cb540f;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #1b441b;
+}
+
+/* Serviços */
+.servicos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.servico-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #cb540f;
     text-align: center;
 }
 
-@media (min-width: 768px) {
-    .about-section {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-    }
+.servico-item h3 {
+    color: #cb540f;
+    margin-bottom: 10px;
 }
 
-/* Botão do WhatsApp */
-.whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 100;
-    text-decoration: none;
-}
-
-.whatsapp-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #25d366;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.whatsapp-icon:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
+/* Contato */
+.contato-container
