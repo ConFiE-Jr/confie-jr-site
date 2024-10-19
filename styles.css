@@ -1,119 +1,176 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Fontes globais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     background-color: #f2f2f2;
-    color: #1b441b;
+    color: #333;
+    margin: 0;
 }
 
-header {
+/* Menu de navegação */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1b441b;
-    padding: 20px;
-    color: white;
+    padding: 10px 50px;
 }
 
-.logo img {
-    width: 150px;
+.navbar-logo img {
+    width: 100px;
 }
 
-nav ul {
-    list-style: none;
+.navbar-menu {
+    list-style-type: none;
     display: flex;
+    gap: 20px;
 }
 
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
+.navbar-menu li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
 }
 
-.hero {
-    background: url('background.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 50px;
+/* Seção principal (Header) */
+.main-header {
     text-align: center;
-    color: white;
+    padding: 100px 20px;
+    background-color: #81a969;
 }
 
-.overlay h1 {
+.main-title {
+    font-family: 'League Spartan', sans-serif;
     font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.overlay p {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.btn-cta {
-    background-color: #cb540f;
     color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
 }
 
-.mvv-section, .services-section, .team-section, .contact-section {
-    padding: 50px;
-    text-align: center;
+.sub-title {
+    font-size: 24px;
+    color: #f2f2f2;
+    animation: fadeIn 3s ease-in-out;
 }
 
-h2 {
-    font-size: 36px;
-    color: #1b441b;
-    margin-bottom: 20px;
+/* Animação de movimento */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.service-list {
+/* Seção MVV (Missão, Visão e Valores) */
+.mvv-section {
     display: flex;
     justify-content: space-around;
+    padding: 50px 0;
+    background-color: #f2f2f2;
 }
 
-.service-item ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    text-align: left;
+.mvv-card {
+    text-align: center;
+    width: 30%;
 }
 
-.team-section img {
+.mvv-card img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.mvv-card h3 {
+    color: #1b441b;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.mvv-card p {
+    color: #666;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Seção de Serviços */
+.services-section {
+    padding: 50px;
+    background-color: #1b441b;
+    color: white;
+}
+
+.services-section h2 {
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    color: #f2f2f2;
+}
+
+.service-card {
+    background-color: #81a969;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card img {
+    width: 100px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+}
+
+.service-card p {
+    font-family: 'Quicksand', sans-serif;
+    color: #f2f2f2;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+/* Seção de Equipe */
+#team {
+    text-align: center;
+    padding: 50px;
+}
+
+#team img {
     width: 80%;
+    border-radius: 10px;
+}
+
+/* Seção de Contato */
+#contact {
+    padding: 50px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 18px;
+}
+
+#contact iframe {
     margin-top: 20px;
     border-radius: 10px;
 }
 
-footer {
-    background-color: #1b441b;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.whatsapp-link {
+/* Botão de WhatsApp */
+.whatsapp-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
-}
-
-.whatsapp-link img {
-    width: 60px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    z-index: 100;
+    text-decoration: none;
 }
