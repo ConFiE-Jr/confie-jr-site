@@ -1,8 +1,12 @@
 /* Estilo Global */
-body {
-    font-family: 'Roboto', sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
     background-color: #f2f2f2;
     color: #1b441b;
 }
@@ -33,12 +37,18 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #cb540f;
 }
 
 /* Seção Hero */
 .hero {
     background-image: url('../assets/hero-bg.jpg');
     background-size: cover;
+    background-position: center;
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -76,11 +86,46 @@ nav ul li a {
     }
 }
 
-/* Serviços */
+/* Seção Sobre Nós */
+.sobre-nos {
+    padding: 50px 20px;
+    background-color: #f2f2f2;
+    color: #1b441b;
+    text-align: center;
+}
+
+.sobre-nos h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.mvv {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mvv div {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.mvv h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Seção Serviços */
 .servicos {
     background-color: #cb540f;
     color: white;
     padding: 50px 20px;
+    text-align: center;
+}
+
+.servicos h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
 }
 
 .servicos-grid {
@@ -92,6 +137,14 @@ nav ul li a {
 .servico {
     width: 30%;
     margin-bottom: 20px;
+    background-color: #1b441b;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.servico:hover {
+    transform: translateY(-10px);
 }
 
 .servico h3 {
@@ -99,15 +152,100 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
-/* Seção Contato */
-.contato-info {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+.servico p {
+    font-size: 1em;
+    color: #f2f2f2;
 }
 
+/* Seção Cases de Sucesso */
+.cases {
+    padding: 50px 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.cases h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.cases ul {
+    list-style: none;
+}
+
+.cases ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Seção Equipe */
+.equipe {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #81a969;
+    color: white;
+}
+
+.equipe h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.equipe img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Seção Contato */
+.contato {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #cb540f;
+    color: white;
+}
+
+.contato h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato-info iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.contato-detalhes p {
+    margin: 10px 0;
+}
+
+.contato-detalhes a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.contato-detalhes a:hover {
+    text-decoration: underline;
+}
+
+/* Botão de WhatsApp */
 .whatsapp {
     position: fixed;
     bottom: 20px;
     right: 20px;
+}
+
+.whatsapp img {
+    width: 50px;
+    height: 50px;
 }
