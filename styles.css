@@ -182,20 +182,31 @@ nav ul li a:hover {
 /* Estilo da seção de cases de sucesso */
 .cases-section {
     text-align: center;
-    padding: 50px 0; /* Ajuste de padding superior/inferior */
+    padding: 0; /* Remover padding extra */
     background-color: #f2f2f2;
+    height: 100vh; /* Ocupa toda a altura da janela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .cases-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 50px;
+    font-size: 3rem; /* Aumentar o tamanho da fonte */
+    margin-bottom: 30px;
     color: #1b441b;
 }
 
 .cases-container {
     position: relative;
-    width: 50vw; /* O retângulo ocupará 50% da largura da tela */
-    margin: 0 auto; /* Centraliza o container */
+    width: 50vw; /* 50% da largura da tela */
+    height: 50vh; /* 50% da altura da tela */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
 }
 
@@ -203,58 +214,61 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    width: 100%;
+    height: 100%; /* Ocupa 100% do container */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease;
-    height: 300px; /* Definindo uma altura fixa para os retângulos */
+    box-sizing: border-box;
 }
 
 .case img {
-    width: 180px; /* Tamanho fixo para a largura da imagem */
-    height: 180px; /* Altura fixa */
-    object-fit: cover; /* Garante que a imagem preencha o espaço de forma consistente */
+    width: 30%; /* Imagens ocupando 30% da largura do retângulo */
+    height: 80%; /* Altura de 80% do retângulo */
+    object-fit: cover; /* Mantém a proporção da imagem */
     border-radius: 10px;
 }
 
 .case-info {
-    flex-grow: 1; /* Faz o texto crescer para preencher o espaço */
+    flex-grow: 1;
     padding-left: 20px;
     text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .case-info h3 {
     color: #1b441b;
-    font-size: 1.8rem;
+    font-size: 2rem; /* Aumentar tamanho do título */
     margin-bottom: 15px;
 }
 
 .case-info p {
     color: #333;
-    font-size: 1rem;
+    font-size: 1.3rem; /* Aumentar tamanho da descrição */
 }
 
 .prev-btn, .next-btn {
     background-color: #81a969;
     color: white;
     border: none;
-    padding: 15px; /* Aumenta o tamanho das setas */
+    padding: 15px;
     border-radius: 50%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 2rem; /* Aumentar o tamanho das setas */
     z-index: 10;
 }
 
 .prev-btn {
-    left: -40px; /* Fora do retângulo, ajustado à esquerda */
+    left: -50px; /* Posicionar seta à esquerda fora do container */
 }
 
 .next-btn {
-    right: -40px; /* Fora do retângulo, ajustado à direita */
+    right: -50px; /* Posicionar seta à direita fora do container */
 }
 
 .dots {
@@ -282,8 +296,6 @@ nav ul li a:hover {
 
 .active-slide {
     display: flex; /* Exibe o slide ativo */
-    justify-content: space-between;
-    align-items: center;
 }
 
 /* Seção Equipe */
