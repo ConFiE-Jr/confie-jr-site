@@ -114,7 +114,7 @@ nav ul li a:hover {
     background-color: #f2f2f2;
     color: #1b441b;
     text-align: center;
-    height: 70vh; /* Ocupa 70% da altura da tela */
+    min-height: 70vh; /* Ocupa 70% da altura da tela */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,17 +130,41 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%
+    width: 100%;
 }
 
 .mvv div {
     width: 30%;
     margin-bottom: 20px;
+    background-color: #f2f2f2;
+    border: 2px solid #1b441b; /* Contorno verde escuro */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mvv div:hover {
+    transform: translateY(-10px); /* Efeito de hover para levantar os quadrados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Aumenta a sombra no hover */
 }
 
 .mvv h3 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.mvv h3 i {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    font-size: 1.8em; /* Tamanho do ícone */
+    color: #1b441b; /* Cor do ícone */
+}
+
+.mvv p {
+    font-size: 1.2rem; /* Tamanho do texto */
+    color: #333;
 }
 
 /* Seção Serviços */
