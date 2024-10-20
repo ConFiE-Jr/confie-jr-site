@@ -236,7 +236,7 @@ nav ul li a:hover {
 .case img {
     width: 50%; /* Aumenta a largura da imagem */
     height: 100%; /* Aumenta a altura da imagem */
-    object-fit: cover;
+    object-fit: cover; /* Mantém a proporção da imagem */
     border-radius: 10px;
 }
 
@@ -273,6 +273,7 @@ nav ul li a:hover {
     cursor: pointer;
     font-size: 2.5rem;
     z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .prev-btn {
@@ -297,6 +298,7 @@ nav ul li a:hover {
     display: inline-block;
     margin: 0 7px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .active-dot, .dot:hover {
