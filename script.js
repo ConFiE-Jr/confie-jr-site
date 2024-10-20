@@ -12,6 +12,7 @@ document.addEventListener('scroll', function() {
 // Cases de Sucesso
 // Inicializando o slide atual
 let currentSlide = 0;
+let slideInterval;
 
 // Selecionando os elementos de slide e pontos (dots)
 const slides = document.querySelectorAll('.slide');
@@ -31,12 +32,14 @@ function showSlide(index) {
 function prevSlide() {
     currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
     showSlide(currentSlide);
+    resetAutoSlide(); // Reseta o timer ao clicar
 }
 
 // Função para ir para o próximo slide
 function nextSlide() {
     currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
     showSlide(currentSlide);
+    resetAutoSlide(); // Reseta o timer ao clicar
 }
 
 // Adicionando eventos de clique aos botões
@@ -48,6 +51,22 @@ dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
         currentSlide = index;
         showSlide(currentSlide);
+        resetAutoSlide(); // Reseta o timer ao clicar no dot
     });
 });
 
+// Função para avançar o slide automaticamente a cada 5 segundos
+function autoSlide() {
+    slideInterval = setInterval(() => {
+        nextSlide();
+    }, 5000); // 5000ms = 5 segundos
+}
+
+// Reseta o intervalo de tempo para evitar conflito ao clicar manualmente
+function resetAutoSlide() {
+    clearInterval(slideInterval); // Para o intervalo atual
+    autoSlide(); // Reinicia o intervalo automático
+}
+
+// Inicializa o auto-slide
+autoSlide();
