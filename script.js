@@ -11,12 +11,15 @@ document.addEventListener('scroll', function() {
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Função para mudar os slides
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Função para mudar os slides dos Cases de Sucesso
 function changeSlide(n) {
     showSlides(slideIndex += n);
 }
 
-// Função para slides atuais
+// Função para exibir o slide atual
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
@@ -36,14 +39,17 @@ function showSlides(n) {
     // Esconde todos os slides
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
+        slides[i].classList.remove("active-slide"); // Remove a classe ativa de todos os slides
     }
 
-    // Remove a classe "active" de todos os pontos
+    // Remove a classe "active-dot" de todos os pontos
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" active-dot", "");
     }
 
     // Exibe o slide atual e ativa o ponto correspondente
     slides[slideIndex - 1].style.display = "flex";
-    dots[slideIndex - 1].className += " active";
+    slides[slideIndex - 1].classList.add("active-slide"); // Adiciona a classe ativa ao slide atual
+    dots[slideIndex - 1].className += " active-dot";
 }
+
