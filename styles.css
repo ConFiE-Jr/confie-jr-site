@@ -98,7 +98,7 @@ h2 {
 /* MVV Section */
 .mvv {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;  /* Alterado para espaçamento mais uniforme */
     flex-wrap: wrap;
 }
 
@@ -145,11 +145,13 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Adicionado para melhorar o comportamento responsivo */
 }
 
 .contato-container iframe {
     flex: 1;
     margin-right: 20px;
+    max-width: 100%; /* Garantir que o iframe seja responsivo */
 }
 
 .contact-details {
