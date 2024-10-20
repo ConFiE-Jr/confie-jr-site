@@ -276,11 +276,11 @@ nav ul li a:hover {
 }
 
 .prev-btn {
-    left: -70px; /* Posiciona a seta à esquerda */
+    left: -90px; /* Posiciona a seta à esquerda fora do container */
 }
 
 .next-btn {
-    right: -70px; /* Posiciona a seta à direita */
+    right: -90px; /* Posiciona a seta à direita fora do container */
 }
 
 /* Estilização dos pontos (dots) */
