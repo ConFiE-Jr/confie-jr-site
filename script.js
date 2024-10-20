@@ -10,43 +10,30 @@ document.addEventListener('scroll', function() {
 });
 
 // Cases de Sucesso
-let slideIndex = 1;
-showSlides(slideIndex);
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
 
-// Função para mudar os slides
-function changeSlide(n) {
-    showSlides(slideIndex += n);
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active-slide', i === index);
+        dots[i].classList.toggle('active-dot', i === index);
+    });
 }
 
-// Função para slides atuais
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+document.querySelector('.prev-btn').addEventListener('click', () => {
+    currentSlide = (currentSlide === 0) ? slides.length - 1 : currentSlide - 1;
+    showSlide(currentSlide);
+});
 
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("slide");
-    let dots = document.getElementsByClassName("dot");
+document.querySelector('.next-btn').addEventListener('click', () => {
+    currentSlide = (currentSlide === slides.length - 1) ? 0 : currentSlide + 1;
+    showSlide(currentSlide);
+});
 
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-
-    // Esconde todos os slides
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    // Remove a classe "active" de todos os pontos
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    // Exibe o slide atual e ativa o ponto correspondente
-    slides[slideIndex - 1].style.display = "flex";
-    dots[slideIndex - 1].className += " active";
-}
-
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        currentSlide = index;
+        showSlide(currentSlide);
+    });
+});
