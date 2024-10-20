@@ -76,7 +76,7 @@ nav ul li a:hover {
 }
 
 .hero-text h1 {
-    font-size: 3em;
+    font-size: 3.5rem;
     margin: 0;
     animation: slideIn 2s ease-out;
 }
@@ -114,15 +114,15 @@ nav ul li a:hover {
     background-color: #f2f2f2;
     color: #1b441b;
     text-align: center;
-    min-height: 70vh; /* Ocupa 70% da altura da tela */
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column;
 }
 
 .sobre-nos h2 {
-    font-size: 2em;
+    font-size: 3.5em; /* Aumentei o tamanho do título principal */
     margin-bottom: 30px;
 }
 
@@ -134,10 +134,11 @@ nav ul li a:hover {
 }
 
 .mvv div {
-    width: 30%;
+    width: 25%; /* Reduzi a largura */
+    height: 400px; /* Aumentei a altura para tornar o retângulo mais vertical */
     margin-bottom: 20px;
     background-color: #f2f2f2;
-    border: 2px solid #1b441b; /* Contorno verde escuro */
+    border: 2px solid #1b441b;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -145,27 +146,28 @@ nav ul li a:hover {
 }
 
 .mvv div:hover {
-    transform: translateY(-10px); /* Efeito de hover para levantar os quadrados */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Aumenta a sombra no hover */
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .mvv h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 1.8em; /* Aumentei o tamanho do título de cada bloco */
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
 }
 
 .mvv h3 i {
-    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
-    font-size: 1.8em; /* Tamanho do ícone */
-    color: #1b441b; /* Cor do ícone */
+    margin-right: 10px;
+    font-size: 2em; /* Aumentei o tamanho do ícone */
+    color: #1b441b;
 }
 
 .mvv p {
-    font-size: 1.2rem; /* Tamanho do texto */
+    font-size: 1.4rem; /* Aumentei o tamanho do texto */
     color: #333;
 }
+
 
 /* Seção Serviços */
 .servicos {
@@ -181,7 +183,7 @@ nav ul li a:hover {
 }
 
 .servicos h2 {
-    font-size: 2em;
+    font-size: 3,5rem;
     margin-bottom: 30px;
 }
 
@@ -287,7 +289,7 @@ nav ul li a:hover {
 /* Botões de navegação */
 .prev-btn, .next-btn {
     background-color: #81a969;
-    color: white;
+    color: #81a969;
     border: none;
     padding: 20px;
     border-radius: 50%;
@@ -352,7 +354,7 @@ nav ul li a:hover {
 }
 
 .equipe h2 {
-    font-size: 2em;
+    font-size: 3.5rem;
     margin-bottom: 30px;
 }
 
@@ -371,7 +373,7 @@ nav ul li a:hover {
 }
 
 .contato h2 {
-    font-size: 2em;
+    font-size: 3.5rem;
     margin-bottom: 30px;
 }
 
