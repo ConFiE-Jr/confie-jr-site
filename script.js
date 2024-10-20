@@ -1,7 +1,10 @@
-window.addEventListener('scroll', function() {
-    const heroText = document.querySelector('.hero h1');
-    const scrollY = window.scrollY;
-
-    // Adiciona efeito de fade conforme a rolagem
-    heroText.style.opacity = 1 - scrollY / 600;
+// Adicione animações de scroll
+document.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+            section.classList.add('visible');
+        }
+    });
 });
