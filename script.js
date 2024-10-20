@@ -13,18 +13,12 @@ document.addEventListener('scroll', function() {
 let slideIndex = 1;
 showSlides(slideIndex);
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Função para mudar os slides 
+// Função para mudar os slides
 function changeSlide(n) {
     showSlides(slideIndex += n);
 }
 
-// Função para exibir o slide atual
+// Função para slides atuais
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
@@ -46,12 +40,13 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
 
-    // Remove a classe "active-dot" de todos os pontos
+    // Remove a classe "active" de todos os pontos
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active-dot", "");
+        dots[i].className = dots[i].className.replace(" active", "");
     }
 
     // Exibe o slide atual e ativa o ponto correspondente
     slides[slideIndex - 1].style.display = "flex";
-    dots[slideIndex - 1].className += " active-dot";
+    dots[slideIndex - 1].className += " active";
 }
+
