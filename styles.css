@@ -114,6 +114,11 @@ nav ul li a:hover {
     background-color: #f2f2f2;
     color: #1b441b;
     text-align: center;
+    height: 70vh; /* Ocupa 70% da altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Centraliza o conteúdo verticalmente */
 }
 
 .sobre-nos h2 {
@@ -125,6 +130,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 100%
 }
 
 .mvv div {
@@ -143,6 +149,11 @@ nav ul li a:hover {
     color: white;
     padding: 50px 20px;
     text-align: center;
+    height: 70vh; /* Ocupa 70% da altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Centraliza o conteúdo verticalmente */
 }
 
 .servicos h2 {
@@ -154,6 +165,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 100%
 }
 
 .servico {
@@ -306,6 +318,11 @@ nav ul li a:hover {
     text-align: center;
     background-color: #81a969;
     color: white;
+    height: 70vh; /* Ocupa 70% da altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Centraliza o conteúdo verticalmente */
 }
 
 .equipe h2 {
