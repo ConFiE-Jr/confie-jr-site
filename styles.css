@@ -179,26 +179,107 @@ nav ul li a:hover {
     color: #f2f2f2;
 }
 
-/* Seção Cases de Sucesso */
-.cases {
+/* Estilo da seção de cases de sucesso */
+.cases-section {
+    text-align: center;
     padding: 50px 20px;
     background-color: #f2f2f2;
+}
+
+.cases-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #1b441b;
+}
+
+.cases-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.case {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.case img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.case-info {
+    max-width: 500px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.case-info h3 {
+    color: #1b441b;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.case-info p {
+    color: #333;
+    font-size: 1rem;
+}
+
+.prev-btn, .next-btn {
+    background-color: #81a969;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.dots {
     text-align: center;
+    margin-top: 20px;
 }
 
-.cases h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
-.cases ul {
-    list-style: none;
+.active, .dot:hover {
+    background-color: #81a969;
 }
 
-.cases ul li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+.slide {
+    display: none;
 }
+
+/* Exibe o slide ativo */
+.active-slide {
+    display: flex;
+}
+
 
 /* Seção Equipe */
 .equipe {
