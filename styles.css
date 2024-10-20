@@ -222,7 +222,7 @@ nav ul li a:hover {
 }
 
 .case img {
-    width: 50%; /* Imagens ocupando 50% da largura do retângulo */
+    width: 70%; /* Imagens ocupando 50% da largura do retângulo */
     height: 100%; /* Imagens ocupando 100% da altura do retângulo */
     object-fit: cover;
     border-radius: 10px;
