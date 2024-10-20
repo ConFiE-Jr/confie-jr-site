@@ -76,7 +76,7 @@ header ul li a:hover {
     padding: 60px 20px;
 }
 
-h2 {
+h 2 {
     text-align: center;
     font-size: 2rem;
     color: #1b441b;
@@ -98,7 +98,7 @@ h2 {
 /* MVV Section */
 .mvv {
     display: flex;
-    justify-content: space-evenly;  /* Alterado para espaçamento mais uniforme */
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -145,13 +145,13 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Adicionado para melhorar o comportamento responsivo */
+    flex-wrap: wrap;
 }
 
 .contato-container iframe {
     flex: 1;
     margin-right: 20px;
-    max-width: 100%; /* Garantir que o iframe seja responsivo */
+    max-width: 100%;
 }
 
 .contact-details {
@@ -178,4 +178,23 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+/* Responsividade do iframe */
+.responsive-iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+@media (max-width: 768px) {
+    .responsive-iframe {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .responsive-iframe {
+        height: 150px;
+    }
 }
