@@ -175,7 +175,7 @@ nav ul li a:hover {
     color: white;
     padding: 50px 20px;
     text-align: center;
-    height: 70vh; /* Ocupa 70% da altura da tela */
+    height: 90vh; /* Ocupa 70% da altura da tela */
     display: flex;
     justify-content: center;
     align-items: center;
