@@ -21,7 +21,7 @@ header nav {
 }
 
 header .logo {
-    height: 70px;
+    height: 100px;
 }
 
 nav ul {
@@ -246,6 +246,6 @@ nav ul li a:hover {
 }
 
 .whatsapp img {
-    width: 50px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
 }
