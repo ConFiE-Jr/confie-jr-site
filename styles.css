@@ -365,7 +365,7 @@ nav ul li a:hover {
 
 .equipe img {
     width: 100%;
-    max-width: 600px;
+    max-width: 800px; /* Aumentei o tamanho máximo da imagem */
     border-radius: 40px;
 }
 
