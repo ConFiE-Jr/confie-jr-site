@@ -44,14 +44,35 @@ nav ul li a:hover {
     color: #cb540f;
 }
 
-/* Seção Hero */
+/* Estilo para a Seção Hero */
 .hero {
-    background-image: url('../assets/liberacao.JPG');
+    position: relative;
+    background-image: url('assets/liberacao.JPG');
     background-size: cover;
     background-position: center;
-    color: 1b441b;
+    background-repeat: no-repeat;
+    height: 100vh; /* Tela cheia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center;
-    padding: 100px 20px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura */
+    z-index: 1; /* Coloca a sobreposição abaixo do texto */
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2; /* Coloca o texto acima da sobreposição */
 }
 
 .hero-text h1 {
@@ -85,6 +106,7 @@ nav ul li a:hover {
         opacity: 1;
     }
 }
+
 
 /* Seção Sobre Nós */
 .sobre-nos {
