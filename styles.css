@@ -182,19 +182,19 @@ nav ul li a:hover {
 /* Estilo da seção de cases de sucesso */
 .cases-section {
     text-align: center;
-    padding: 50px 20px;
+    padding: 70px 20px; /* Aumentar o padding */
     background-color: #f2f2f2;
 }
 
 .cases-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+    font-size: 3rem; /* Aumentar o título */
+    margin-bottom: 50px;
     color: #1b441b;
 }
 
 .cases-container {
     position: relative;
-    max-width: 900px;
+    max-width: 1200px; /* Aumentar o container */
     margin: 0 auto;
     overflow: hidden;
 }
@@ -204,60 +204,63 @@ nav ul li a:hover {
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    padding: 20px;
+    padding: 30px; /* Aumentar o padding */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease;
+    min-height: 300px; /* Garantir altura mínima */
 }
 
 .case img {
-    max-width: 300px;
+    max-width: 400px; /* Aumentar o tamanho da imagem */
     width: 100%;
+    height: 250px; /* Altura fixa para as imagens */
+    object-fit: cover; /* Manter a imagem proporcional */
     border-radius: 10px;
 }
 
 .case-info {
-    max-width: 500px;
-    padding-left: 20px;
+    max-width: 700px; /* Aumentar a área de texto */
+    padding-left: 30px; /* Aumentar espaçamento entre imagem e texto */
     text-align: left;
 }
 
 .case-info h3 {
     color: #1b441b;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 2rem; /* Aumentar o tamanho do título */
+    margin-bottom: 20px;
 }
 
 .case-info p {
     color: #333;
-    font-size: 1rem;
+    font-size: 1.1rem; /* Aumentar o tamanho do texto */
 }
 
 .prev-btn, .next-btn {
     background-color: #81a969;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 15px; /* Aumentar os botões */
     border-radius: 50%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     z-index: 10;
 }
 
 .prev-btn {
-    left: 10px;
+    left: 20px; /* Ajustar posição */
 }
 
 .next-btn {
-    right: 10px;
+    right: 20px; /* Ajustar posição */
 }
 
 .dots {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px; /* Aumentar espaço entre os dots */
 }
 
 .dot {
@@ -266,7 +269,7 @@ nav ul li a:hover {
     background-color: #ddd;
     border-radius: 50%;
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 7px; /* Aumentar espaço entre os dots */
     cursor: pointer;
 }
 
