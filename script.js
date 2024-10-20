@@ -1,16 +1,7 @@
-// Função para animar ao rolar a página
-function animarScroll() {
-    const sections = document.querySelectorAll('.animar');
-    const windowBottom = window.innerHeight;
+window.addEventListener('scroll', function() {
+    const heroText = document.querySelector('.hero h1');
+    const scrollY = window.scrollY;
 
-    sections.forEach(section => {
-        const sectionTop = section.getBoundingClientRect().top;
-        if (sectionTop < windowBottom - 100) {
-            section.classList.add('visivel');
-        } else {
-            section.classList.remove('visivel');
-        }
-    });
-}
-
-window.addEventListener('scroll', animarScroll);
+    // Adiciona efeito de fade conforme a rolagem
+    heroText.style.opacity = 1 - scrollY / 600;
+});
