@@ -1,3 +1,4 @@
+/* Geral */
 * {
     margin: 0;
     padding: 0;
@@ -47,46 +48,27 @@ header ul li a:hover {
     color: #81a969;
 }
 
-/* Hero Section */
+/* Hero Section com Imagem de Fundo */
 #hero {
-    background-color: #81a969;
-    padding: 80px 20px;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    padding: 0 20px;
 }
 
 #hero h1 {
     color: #f2f2f2;
-    font-size: 2.5rem;
-    animation: fadeInDown 1.5s;
+    font-size: 3rem;
 }
 
 #hero p {
     color: #f2f2f2;
     margin-top: 10px;
     font-size: 1.2rem;
-    animation: fadeInUp 1.5s;
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* Seções Gerais */
@@ -99,6 +81,18 @@ h2 {
     font-size: 2rem;
     color: #1b441b;
     margin-bottom: 40px;
+}
+
+/* Scroll Animation */
+.animar {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animar.visivel {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* MVV Section */
@@ -147,4 +141,39 @@ h2 {
 }
 
 /* Contato */
-.contato-container
+.contato-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato-container iframe {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #1b441b;
+    padding: 20px;
+    text-align: center;
+    color: #f2f2f2;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
