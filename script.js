@@ -8,13 +8,18 @@ document.addEventListener('scroll', function() {
         }
     });
 });
+
+// Cases de Sucesso
 let slideIndex = 1;
 showSlides(slideIndex);
 
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Função para mudar os slides dos Cases de Sucesso
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Função para mudar os slides 
 function changeSlide(n) {
     showSlides(slideIndex += n);
 }
@@ -39,7 +44,6 @@ function showSlides(n) {
     // Esconde todos os slides
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
-        slides[i].classList.remove("active-slide"); // Remove a classe ativa de todos os slides
     }
 
     // Remove a classe "active-dot" de todos os pontos
@@ -49,7 +53,5 @@ function showSlides(n) {
 
     // Exibe o slide atual e ativa o ponto correspondente
     slides[slideIndex - 1].style.display = "flex";
-    slides[slideIndex - 1].classList.add("active-slide"); // Adiciona a classe ativa ao slide atual
     dots[slideIndex - 1].className += " active-dot";
 }
-
