@@ -107,14 +107,25 @@
 </head>
 <body>
 
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cases de Sucesso - ConFiE Jr</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
     <!-- Seção de Cases de Sucesso -->
     <section id="cases" class="cases-section">
         <h2>Cases de Sucesso</h2>
         <div class="cases-container">
+            <!-- Botão Anterior -->
             <button class="prev-btn">&#8249;</button>
-            
-            <div class="slide">
-                <!-- Case 1 -->
+
+            <!-- Slide 1: Ginástica Laboral SIPAT Brasal Refrigerantes -->
+            <div class="slide active-slide">
                 <div class="case">
                     <img src="assets/ginastica.png" alt="Ginástica Laboral SIPAT Brasal Refrigerantes">
                     <div class="case-info">
@@ -124,10 +135,10 @@
                 </div>
             </div>
 
+            <!-- Slide 2: Consultoria em Ergonomia Green Owls -->
             <div class="slide">
-                <!-- Case 2 -->
                 <div class="case">
-                    <img src="assets/consultoriajpg" alt="Consultoria em Ergonomia Green Owls">
+                    <img src="assets/consultoria.jpg" alt="Consultoria em Ergonomia Green Owls">
                     <div class="case-info">
                         <h3>Consultoria em Ergonomia Green Owls</h3>
                         <p>Consultoria completa em ergonomia para melhorar a produtividade e evitar problemas posturais nos colaboradores da Green Owls.</p>
@@ -135,8 +146,8 @@
                 </div>
             </div>
 
+            <!-- Slide 3: Liberação Miofascial e Primeiros Socorros no Intermed Centro Oeste -->
             <div class="slide">
-                <!-- Case 3 -->
                 <div class="case">
                     <img src="assets/liberacao.JPG" alt="Liberação Miofascial e Primeiros Socorros no Intermed Centro Oeste">
                     <div class="case-info">
@@ -146,8 +157,8 @@
                 </div>
             </div>
 
+            <!-- Slide 4: Organização do evento esportivo Copa ConFiE -->
             <div class="slide">
-                <!-- Case 4 -->
                 <div class="case">
                     <img src="assets/gestao.png" alt="Organização do evento esportivo Copa ConFiE">
                     <div class="case-info">
@@ -157,8 +168,8 @@
                 </div>
             </div>
 
+            <!-- Slide 5: Evento Esportivo Corporativo -->
             <div class="slide">
-                <!-- Case 5 -->
                 <div class="case">
                     <img src="assets/aet.jpg" alt="Evento Esportivo Corporativo">
                     <div class="case-info">
@@ -168,8 +179,8 @@
                 </div>
             </div>
 
+            <!-- Slide 6: Avaliação Ergonômica de Atletas -->
             <div class="slide">
-                <!-- Case 6 -->
                 <div class="case">
                     <img src="assets/avaliacao.jpg" alt="Avaliação Ergonômica de Atletas">
                     <div class="case-info">
@@ -179,26 +190,24 @@
                 </div>
             </div>
 
+            <!-- Botão Próximo -->
             <button class="next-btn">&#8250;</button>
-            <div class="dots">
-                <span class="dot active-dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
         </div>
 
-        <!-- Indicadores -->
+        <!-- Indicadores (Dots) -->
         <div class="dots">
+            <span class="dot active-dot" onclick="currentSlide(0)"></span>
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
             <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
         </div>
     </section>
 
     <script src="script.js"></script>
 </body>
+</html>
 
     <!-- Seção Equipe -->
     <section id="equipe" class="equipe">
