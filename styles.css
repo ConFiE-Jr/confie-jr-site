@@ -76,13 +76,13 @@ nav ul li a:hover {
 }
 
 .hero-text h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
     margin: 0;
     animation: slideIn 2s ease-out;
 }
 
 .hero-text p {
-    font-size: 1.5em;
+    font-size: 3rem;
     margin-top: 20px;
     animation: fadeIn 3s ease-in-out;
 }
@@ -164,7 +164,7 @@ nav ul li a:hover {
 }
 
 .mvv p {
-    font-size: 1.4rem; /* Aumentei o tamanho do texto */
+    font-size: 2rem; /* Aumentei o tamanho do texto */
     color: #333;
 }
 
@@ -183,7 +183,7 @@ nav ul li a:hover {
 }
 
 .servicos h2 {
-    font-size: 3,5rem;
+    font-size: 3.5rem;
     margin-bottom: 30px;
 }
 
@@ -208,12 +208,12 @@ nav ul li a:hover {
 }
 
 .servico h3 {
-    font-size: 1.5em;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .servico p {
-    font-size: 1em;
+    font-size: 1.5em;
     color: #f2f2f2;
 }
 
@@ -361,7 +361,7 @@ nav ul li a:hover {
 .equipe img {
     width: 100%;
     max-width: 600px;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 
 /* Seção Contato */
