@@ -97,15 +97,104 @@
     </section>
 
     <!-- Seção Cases de Sucesso -->
-    <section id="cases" class="cases">
-        <h2>Cases de Sucesso</h2>
-        <ul>
-            <li>Ginástica Laboral SIPAT Brasal Refrigerantes S/A</li>
-            <li>Consultoria em Ergonomia com a Green Owls</li>
-            <li>Liberação Miofascial e Primeiros Socorros no Esporte no Intermed Centro Oeste</li>
-            <li>Organização do evento esportivo Copa ConFiE</li>
-        </ul>
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cases de Sucesso - ConFiE Jr</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Seção de Cases de Sucesso -->
+    <section id="cases" class="cases-section">
+        <h2>Nossos Cases</h2>
+        <div class="cases-container">
+            <button class="prev-btn" onclick="changeSlide(-1)">&#8249;</button>
+            
+            <div class="slide">
+                <!-- Case 1 -->
+                <div class="case">
+                    <img src="assets/ginastica.png" alt="Ginástica Laboral SIPAT Brasal Refrigerantes">
+                    <div class="case-info">
+                        <h3>Ginástica Laboral SIPAT Brasal Refrigerantes</h3>
+                        <p>Implementação de Ginástica Laboral para SIPAT da Brasal, visando melhorar a saúde e bem-estar dos colaboradores.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <!-- Case 2 -->
+                <div class="case">
+                    <img src="assets/consultoriajpg" alt="Consultoria em Ergonomia Green Owls">
+                    <div class="case-info">
+                        <h3>Consultoria em Ergonomia Green Owls</h3>
+                        <p>Consultoria completa em ergonomia para melhorar a produtividade e evitar problemas posturais nos colaboradores da Green Owls.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <!-- Case 3 -->
+                <div class="case">
+                    <img src="assets/liberacao.JPG" alt="Liberação Miofascial e Primeiros Socorros no Intermed Centro Oeste">
+                    <div class="case-info">
+                        <h3>Liberação Miofascial e Primeiros Socorros no Intermed Centro Oeste</h3>
+                        <p>Assistência com primeiros socorros e sessões de liberação miofascial para atletas durante o evento Intermed.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <!-- Case 4 -->
+                <div class="case">
+                    <img src="assets/gestao.png" alt="Organização do evento esportivo Copa ConFiE">
+                    <div class="case-info">
+                        <h3>Organização do evento esportivo Copa ConFiE</h3>
+                        <p>Organização completa do evento esportivo Copa ConFiE, desde logística até a execução dos jogos e entrega de troféus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <!-- Case 5 -->
+                <div class="case">
+                    <img src="assets/aet.jpg" alt="Evento Esportivo Corporativo">
+                    <div class="case-info">
+                        <h3>Evento Esportivo Corporativo</h3>
+                        <p>Organizamos evento esportivo com jogos, competições e ginástica laboral em uma empresa corporativa de grande porte.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <!-- Case 6 -->
+                <div class="case">
+                    <img src="assets/avaliacao.jpg" alt="Avaliação Ergonômica de Atletas">
+                    <div class="case-info">
+                        <h3>Avaliação Ergonômica de Atletas</h3>
+                        <p>Avaliação ergonômica completa de atletas para garantir melhor desempenho e prevenção de lesões durante os treinos e competições.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="next-btn" onclick="changeSlide(1)">&#8250;</button>
+        </div>
+
+        <!-- Indicadores -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
     </section>
+
+    <script src="script.js"></script>
+</body>
 
     <!-- Seção Equipe -->
     <section id="equipe" class="equipe">
