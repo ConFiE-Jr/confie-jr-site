@@ -7,6 +7,8 @@ function animarScroll() {
         const sectionTop = section.getBoundingClientRect().top;
         if (sectionTop < windowBottom - 100) {
             section.classList.add('visivel');
+        } else {
+            section.classList.remove('visivel');
         }
     });
 }
