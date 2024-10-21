@@ -173,7 +173,7 @@ nav ul li a:hover {
 .servicos {
     background-color: #81a969; /* Faixa verde-claro */
     color: white;
-    padding: 40px 20px; /* Padding mais ajustado */
+    padding: 40px 20px;
     text-align: center;
     height: 100vh; /* Ocupará exatamente a altura da tela */
     display: flex;
@@ -194,20 +194,20 @@ nav ul li a:hover {
     justify-content: center; /* Centraliza os itens dentro da seção */
     align-items: center;
     flex-wrap: wrap;
-    gap: 40px; /* Aumentei o espaçamento entre os itens */
+    gap: 40px; /* Espaçamento entre os itens */
     width: 80%; /* Os itens ocupam 80% da largura da seção */
-    max-width: 1200px; /* Limita a largura máxima */
+    max-width: 1400px; /* Limita a largura máxima */
 }
 
 .servico {
-    flex: 1 1 calc(30% - 40px); /* Faz com que cada item ocupe aproximadamente 30%, com espaçamento */
+    flex: 1 1 calc(45% - 40px); /* Faz com que cada item ocupe aproximadamente 45%, criando retângulos */
     background-color: #1b441b; /* Verde-escuro */
-    padding: 30px; /* Padding interno */
+    padding: 30px;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra leve */
-    height: 300px; /* Altura fixa para todos os itens */
-    min-width: 250px; /* Largura mínima para dispositivos menores */
+    height: 200px; /* Altura menor que a largura para criar o efeito de retângulo */
+    min-width: 300px; /* Largura mínima para dispositivos menores */
 }
 
 .servico:hover {
