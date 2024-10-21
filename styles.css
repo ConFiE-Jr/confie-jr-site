@@ -184,30 +184,30 @@ nav ul li a:hover {
 }
 
 .servicos h2 {
-    font-size: 3.2rem; /* Tamanho um pouco menor para caber melhor na tela */
+    font-size: 3.2rem; /* Tamanho ajustado */
     margin-bottom: 40px; /* Espaçamento ajustado */
-    color: #f2f2f2; /* Uma cor branca mais suave */
+    color: #f2f2f2;
 }
 
 .servicos-grid {
     display: flex;
-    justify-content: center; /* Centraliza os itens dentro da seção */
+    justify-content: space-between; /* Espaça uniformemente os itens */
     align-items: center;
-    flex-wrap: wrap;
-    gap: 40px; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem em múltiplas linhas */
+    gap: 20px; /* Espaçamento entre os itens */
     width: 80%; /* Os itens ocupam 80% da largura da seção */
     max-width: 1400px; /* Limita a largura máxima */
 }
 
 .servico {
-    flex: 1 1 calc(45% - 40px); /* Faz com que cada item ocupe aproximadamente 45%, criando retângulos */
+    flex: 1 1 calc(33.333% - 20px); /* Cada item ocupa 1/3 da linha, com espaçamento */
     background-color: #1b441b; /* Verde-escuro */
     padding: 30px;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra leve */
-    height: 200px; /* Altura menor que a largura para criar o efeito de retângulo */
-    min-width: 300px; /* Largura mínima para dispositivos menores */
+    height: 200px; /* Altura fixa */
+    min-width: 250px; /* Largura mínima para dispositivos menores */
 }
 
 .servico:hover {
@@ -228,6 +228,12 @@ nav ul li a:hover {
 }
 
 /* Responsividade */
+@media (max-width: 1024px) {
+    .servico {
+        flex: 1 1 calc(50% - 20px); /* Dois itens por linha em tablets */
+    }
+}
+
 @media (max-width: 768px) {
     .servicos-grid {
         flex-direction: column; /* Empilha os itens em telas menores */
