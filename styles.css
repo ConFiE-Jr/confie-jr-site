@@ -171,55 +171,79 @@ nav ul li a:hover {
 
 /* Seção Serviços */
 .servicos {
-    background-color: #81a969;
+    background-color: #81a969; /* Faixa verde-claro */
     color: white;
-    padding: 50px 20px;
+    padding: 60px 20px; /* Aumentei o padding */
     text-align: center;
-    height: 80vh; /* Ocupa 80% da altura da tela */
+    min-height: 90vh; /* Aumentei a altura para 90% da tela */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column;
 }
 
 .servicos h2 {
-    font-size: 3rem;
-    margin-bottom: 40px;
+    font-size: 3.5rem; /* Aumentei o tamanho do título */
+    margin-bottom: 50px;
+    color: #f2f2f2; /* Uma cor branca mais suave */
 }
 
 .servicos-grid {
     display: flex;
-    justify-content: center; /* Centraliza os itens dentro da seção */
+    justify-content: space-between; /* Itens espaçados uniformemente */
+    align-items: center;
     flex-wrap: wrap;
-    gap: 20px; /* Espaçamento entre os itens */
-    width: 70%; /* Os itens ocupam 70% da largura da seção verde clara */
-    max-width: 1200px; /* Limita a largura máxima */
+    gap: 30px; /* Aumentei o espaçamento entre os quadrados */
+    width: 90%; /* O grid ocupa 90% da largura da seção */
+    max-width: 1400px; /* Limita a largura máxima */
 }
 
 .servico {
-    flex: 1 1 calc(30% - 20px); /* Faz com que cada item ocupe aproximadamente 30% com espaçamento */
-    background-color: #1b441b;
-    padding: 20px;
-    border-radius: 8px;
+    flex: 1 1 calc(33.333% - 30px); /* Cada item ocupa aproximadamente 1/3 da linha */
+    background-color: #1b441b; /* Verde-escuro */
+    padding: 30px; /* Aumentei o padding para mais espaçamento interno */
+    border-radius: 10px; /* Borda suavizada */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    min-width: 250px; /* Largura mínima para dispositivos menores */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra mais definida */
+    min-width: 300px; /* Largura mínima maior para responsividade */
+    color: #f2f2f2; /* Texto mais claro */
 }
 
 .servico:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px); /* Animação de hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
 }
 
 .servico h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 2rem; /* Aumentei o tamanho do texto dos títulos */
+    margin-bottom: 20px;
+    color: #e6e6e6; /* Título em um tom mais claro */
 }
 
 .servico p {
-    font-size: 1.2rem;
-    color: #f2f2f2;
-    line-height: 1.6; /* Melhor espaçamento entre linhas */
+    font-size: 1.4rem; /* Aumentei o tamanho do texto do parágrafo */
+    line-height: 1.8; /* Melhor espaçamento entre linhas */
+    color: #f0f0f0; /* Texto do parágrafo um pouco mais claro */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .servicos-grid {
+        flex-direction: column; /* Empilha os itens verticalmente em telas menores */
+        gap: 20px;
+    }
+    
+    .servico {
+        min-width: 100%; /* Ocupa 100% da largura em telas pequenas */
+    }
+
+    .servico h3 {
+        font-size: 1.8rem; /* Ajusta o tamanho do título em telas menores */
+    }
+
+    .servico p {
+        font-size: 1.1rem; /* Ajusta o tamanho do parágrafo em telas menores */
+    }
 }
 
 /* Estilo da seção de cases de sucesso */
