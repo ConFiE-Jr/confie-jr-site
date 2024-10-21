@@ -175,7 +175,7 @@ nav ul li a:hover {
     color: white;
     padding: 50px 20px;
     text-align: center;
-    height: 90vh; /* Ocupa 90% da altura da tela */
+    height: 80vh; /* Ocupa 80% da altura da tela */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,42 +184,42 @@ nav ul li a:hover {
 
 .servicos h2 {
     font-size: 3rem;
-    margin-bottom: 40px; /* Aumentei o espaçamento abaixo do título */
+    margin-bottom: 40px;
 }
 
 .servicos-grid {
     display: flex;
-    justify-content: space-evenly; /* Distribui os itens de forma mais harmoniosa */
+    justify-content: center; /* Centraliza os itens dentro da seção */
     flex-wrap: wrap;
-    gap: 20px; /* Adiciona espaçamento entre os itens */
-    width: 100%;
-    max-width: 1200px; /* Limita a largura máxima para harmonizar o conteúdo */
+    gap: 20px; /* Espaçamento entre os itens */
+    width: 70%; /* Os itens ocupam 70% da largura da seção verde clara */
+    max-width: 1200px; /* Limita a largura máxima */
 }
 
 .servico {
-    width: 28%; /* Ajustei a largura para harmonizar melhor no grid */
-    min-width: 250px; /* Garantir que os quadrados não fiquem muito pequenos em telas pequenas */
+    flex: 1 1 calc(30% - 20px); /* Faz com que cada item ocupe aproximadamente 30% com espaçamento */
     background-color: #1b441b;
     padding: 20px;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionei sombra para destacar os quadrados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    min-width: 250px; /* Largura mínima para dispositivos menores */
 }
 
 .servico:hover {
     transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumentei a sombra no hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .servico h3 {
-    font-size: 1.8rem; /* Aumentei o tamanho do título dos quadrados */
+    font-size: 1.8rem;
     margin-bottom: 15px;
 }
 
 .servico p {
-    font-size: 1.2rem; /* Reduzi levemente para um texto mais balanceado */
+    font-size: 1.2rem;
     color: #f2f2f2;
-    line-height: 1.6; /* Melhorar a legibilidade com espaçamento entre linhas */
+    line-height: 1.6; /* Melhor espaçamento entre linhas */
 }
 
 /* Estilo da seção de cases de sucesso */
