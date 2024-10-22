@@ -200,7 +200,7 @@ nav ul li a:hover {
 }
 
 .servico {
-    flex: 1 1 calc(33.333% - 20px); /* Cada item ocupa 1/3 da linha, com espaçamento */
+    flex: 1 1 calc(66.666% - 20px); /* Cada item ocupa 1/3 da linha, com espaçamento */
     background-color: #1b441b; /* Verde-escuro */
     padding: 30px;
     border-radius: 10px;
