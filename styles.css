@@ -221,26 +221,26 @@ nav ul li a:hover {
 
 .servico i {
     font-size: 3rem; /* Ícone maior */
-    color: #003366; /* Azul escuro dos ícones */
+    color: white; /* Branco dos ícones */
     margin-bottom: 10px;
 }
 
 .servico h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: white; /* Azul escuro nos títulos */
+    color: white; /* Branco nos títulos */
 }
 
 .servico p {
     font-size: 1.2rem;
-    color: #666666; /* Cinza escuro para o texto */
+    color: white; /* Cinza escuro para o texto */
     line-height: 1.6;
 }
 
 .servico a {
     display: block;
     margin-top: 15px;
-    color: #003366;
+    color: white;
     font-size: 1rem;
     text-decoration: none;
 }
