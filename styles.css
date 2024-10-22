@@ -171,9 +171,9 @@ nav ul li a:hover {
 
 /* Seção Serviços */
 .servicos {
-    background-color: #81a969; /* Faixa verde-claro */
-    color: white;
-    padding: 40px 20px;
+    background-color: #81a969; 
+    color: #333;
+    padding: 60px 20px;
     text-align: center;
     box-sizing: border-box;
 }
@@ -181,12 +181,12 @@ nav ul li a:hover {
 .servicos h2 {
     font-size: 3.2rem;
     margin-bottom: 10px;
-    color: #f2f2f2;
+    color: #273136; /* Título mais escuro */
 }
 
 .subtitulo {
     font-size: 1.6rem;
-    color: #e0e0e0; /* Cinza claro */
+    color: white; 
     margin-bottom: 40px;
 }
 
@@ -196,46 +196,82 @@ nav ul li a:hover {
     flex-wrap: wrap;
     gap: 20px; /* Espaçamento entre os itens */
     width: 100%;
-    max-width: 1200px; /* Limita a largura máxima */
+    max-width: 1200px;
     margin: 0 auto; /* Centraliza o grid */
 }
 
 .servico {
-    background-color: #1b441b; /* Verde-escuro */
+    background-color: #1b441b; 
+    border: 1px solid #f2f2f2; 
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: none; /* Sem sombra para ficar igual ao design */
     flex: 1 1 calc(33.333% - 20px); /* Cada item ocupa 1/3 da linha */
-    min-width: 300px; /* Largura mínima */
-    height: 150px; /* Altura menor */
-    text-align: left; /* Alinhamento do texto à esquerda */
-    color: #f0f0f0; /* Texto claro */
+    min-width: 300px;
+    height: auto;
+    text-align: center; /* Alinha o conteúdo no centro */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
+}
+
+.servico:hover {
+    transform: translateY(-5px); /* Leve elevação ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 .servico i {
-    font-size: 2rem;
-    margin-right: 10px;
-    color: #81a969; /* Verde claro para os ícones */
+    font-size: 3rem; /* Ícone maior */
+    color: #003366; /* Azul escuro dos ícones */
+    margin-bottom: 10px;
 }
 
 .servico h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #f2f2f2; /* Títulos em branco */
-    display: flex;
-    align-items: center;
+    color: white; /* Azul escuro nos títulos */
 }
 
 .servico p {
+    font-size: 1.2rem;
+    color: #666666; /* Cinza escuro para o texto */
+    line-height: 1.6;
+}
+
+.servico a {
+    display: block;
+    margin-top: 15px;
+    color: #003366;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.servico a:hover {
+    text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+}
+
+/* Botão Verde Chamativo */
+.servicos .btn-diagnostico {
+    background-color: #cb540f; /* Laranja */
+    color: white;
+    padding: 15px 30px;
     font-size: 1.4rem;
-    line-height: 1.8;
-    color: #e6e6e6; /* Texto cinza-claro */
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 40px; /* Espaço entre o botão e os serviços */
+    transition: background-color 0.3s ease;
+}
+
+.servicos .btn-diagnostico:hover {
+    background-color: #699053; /* Verde mais escuro no hover */
 }
 
 /* Responsividade */
 @media (max-width: 1024px) {
     .servico {
-        flex: 1 1 calc(50% - 20px); /* Dois itens por linha em tablets */
+        flex: 1 1 calc(33.333% - 20px); /* Três itens por linha em tablets */
     }
 }
 
@@ -246,7 +282,6 @@ nav ul li a:hover {
 
     .servico {
         flex: 1 1 100%; /* Cada item ocupa 100% da largura */
-        height: auto; /* Altura automática em dispositivos menores */
     }
 }
 
