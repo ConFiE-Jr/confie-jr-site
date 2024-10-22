@@ -195,19 +195,19 @@ nav ul li a:hover {
     align-items: center;
     flex-wrap: wrap; /* Permite que os itens quebrem em múltiplas linhas */
     gap: 20px; /* Espaçamento entre os itens */
-    width: 80%; /* Os itens ocupam 80% da largura da seção */
+    width: 100%; /* Os itens ocupam 100% da largura da seção */
     max-width: 1400px; /* Limita a largura máxima */
 }
 
 .servico {
-    flex: 1 1 calc(66.666% - 20px); /* Cada item ocupa 1/3 da linha, com espaçamento */
+    flex: 1 1 calc(33.333% - 20px); /* Cada item ocupa 1/3 da linha, com espaçamento */
     background-color: #1b441b; /* Verde-escuro */
     padding: 30px;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra leve */
-    height: 200px; /* Altura fixa */
-    min-width: 250px; /* Largura mínima para dispositivos menores */
+    height: 250px; /* Altura fixa para os retângulos */
+    min-width: 300px; /* Largura mínima para dispositivos menores */
 }
 
 .servico:hover {
